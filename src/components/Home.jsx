@@ -1,12 +1,18 @@
 import React from "react";
-import { About, Portfolio } from "./"
+import { Hero, About, Portfolio } from "./"
 
 const Home = () =>{
     return(
         <div>
-            <h1>home page</h1>
+            <div id="home">
+            <Hero/>
+            </div>
+            <div id="about">
             <About/>
+            </div>
+            <div id="portfolio">
             <Portfolio/>
+            </div>
         </div>
     )
 }

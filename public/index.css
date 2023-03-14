@@ -1,28 +1,114 @@
+/*
+sunglow: #FDCA40
+carrot orange: #F79824
+celestial blue:#33A1FD
+cornflower blue: #7692FF
+persian blue: #1B2CC1
+sapphire: #2B50AA
+plum: #FF9FE5
+tea rose: #FFD4D4
+light rose: #FF858D
+amethyst: #8367C7
+orchid pink: #F6C0D0
+zaffre: #3423A6
+*/
+
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lexend+Deca&family=Paytone+One&family=Poppins&family=Quicksand:wght@500&family=Righteous&family=Rubik+Mono+One&family=Tilt+Warp&family=Urbanist&display=swap');
+
 body {
     margin: 0;
+    /* background-color: #354F52; */
+    /* background: linear-gradient(#84A98C, #354F52); */
+    background-color: #091540;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 #navbar {
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    color: #3423A6;
     display: flex;
     align-items: center;
     flex-grow: 1;
     max-height: 10%;
     min-height: 40px;
 }
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    letter-spacing: 1px;
+    color: aliceblue;
+    /* font-family: 'Rubik Mono One', sans-serif; */
+    /* padding: 10px; */
+}
+
+#navbar ul a{
+    color: aliceblue;
+}
+
+#navbar ul li{
+    padding: 10px;
+}
+
+#navbar h2{
+    font-family: 'Tilt Warp', sans-serif;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
 
 #hero-home{
     height: 100vh;
-    width: 100vh;
+    width: 100vw;
+    color: #7692FF;
+    /* text-shadow: 2px 2px 3px #5603AD; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#hero-home h1{
+    /*
+    like tilt warp, rubik mono one, righteous
+    */
+    font-family: 'Rubik Mono One', sans-serif;
+    letter-spacing: 2px;
+}
+
+#hero-home p{
+    font-family: 'Tilt Warp', sans-serif;
 }
 
 #about-me-section{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #portfolio-section{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+#portfolio-section .folio-card{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 10px;
+    border-radius: 35px;
+    background-color: #8367C7;
+    margin-right: 10px;
+}
+

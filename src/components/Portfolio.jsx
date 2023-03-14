@@ -2,8 +2,9 @@ import React from "react";
 
 const Portfolio = () => {
     return(
-        <div id="portfolio-section">
-            <h2>Portfolio</h2>
+      <div id="folio-holder">
+<div id="portfolio-section">
+<h2>check out some of my work!</h2>
             <div className="folio-card">
             <h3>Clicker Game</h3>
           <a href='https://boisterous-travesseiro-636639.netlify.app' target='_blank'>Clicker Game</a>
@@ -38,6 +39,7 @@ const Portfolio = () => {
           </p>
             </div>
         </div>
+      </div>
     )
 }
 

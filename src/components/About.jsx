@@ -5,13 +5,17 @@ import recentFam from "./images/recent-fam.jpeg";
 
 const About = () => {
     return(
-        <div id="about-me-section">
-            <h2>about page</h2>
+        <div id="about-holder">
+            <div id="about-me-section">
+        <div className="about-intro">
+        <h2>about</h2>
             <div id="about-photos">
-            <img src={vegas} height="280" width="270" alt="josie's family in vegas"></img>
-            <img src={josiePic} height="280" width="270" alt="josie"></img>
-            <img src={recentFam} height="280" width="270" alt="josie's family in SF"></img>
+            <img className="pics one" src={vegas} height="280" width="270" alt="josie's family in vegas"></img>
+            <img className="pics two" src={josiePic} height="280" width="270" alt="josie"></img>
+            <img className="pics three" src={recentFam} height="280" width="270" alt="josie's family in SF"></img>
         </div>
+        </div>
+        <div id="hold-about-content">
         <article className="about-articles">
         <h3>about me</h3>
             <p>
@@ -51,6 +55,10 @@ const About = () => {
         </p>
         </article>
         </div>
+        
+        </div>
+        </div>
+        
     )
 }
 

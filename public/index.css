@@ -14,8 +14,7 @@ zaffre: #3423A6
 */
 
 /* imports */
-@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Lexend+Deca&family=Paytone+One&family=Poppins&family=Quicksand:wght@500&family=Righteous&family=Rubik+Mono+One&family=Tilt+Warp&family=Urbanist&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Monoton&family=Poppins&family=Quicksand:wght@500&family=Righteous&family=Rubik+Mono+One&family=Tilt+Warp&family=Urbanist&family=Yeseva+One&display=swap');
 body {
     margin: 0;
     /* background-color: #354F52; */
@@ -27,12 +26,19 @@ body {
 
 #navbar {
     /* background-color: black; */
-    color: #3423A6;
+    /* color: #3423A6; */
+    background-color: #040529;
     display: flex;
     align-items: center;
     flex-grow: 1;
     max-height: 10%;
     min-height: 40px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
 }
 #navbar ul{
     display: flex;
@@ -41,13 +47,13 @@ body {
     justify-content: center;
     list-style-type: none;
     letter-spacing: 1px;
-    color: aliceblue;
+    color: #2B50AA;
     /* font-family: 'Rubik Mono One', sans-serif; */
     /* padding: 10px; */
 }
 
 #navbar ul a{
-    color: aliceblue;
+    color: #F79824;
 }
 
 #navbar ul li{
@@ -56,7 +62,10 @@ body {
 
 #navbar h2{
     font-family: 'Tilt Warp', sans-serif;
-    color: aliceblue;
+    color: #F6C0D0;
+    border: 2px dashed #33A1FD;
+    border-radius: 35px;
+    /* padding: 5px; */
     letter-spacing: 2px;
 }
 
@@ -78,10 +87,46 @@ body {
     */
     font-family: 'Rubik Mono One', sans-serif;
     letter-spacing: 2px;
+    font-size: 50pt;
+    color: #F6C0D0;
+    text-shadow: 2px 2px 3px #FF9FE5;
+    border-bottom: dashed 5px #F79824;
 }
 
 #hero-home p{
     font-family: 'Tilt Warp', sans-serif;
+    color: #FDCA40;
+    text-shadow: 1px 1px 2px #33A1FD;
+    font-size: 20pt;
+}
+
+#about-holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Tilt Warp', sans-serif;
+    font-size: 20pt;
+    color: #F6C0D0;
+}
+
+.pics{
+    margin: 20px;
+    border-radius: 35px;
+}
+
+.pics.one, .pics.three{
+    border: 5px dashed #FDCA40;
+    width: 300px;
+} 
+
+.pics.two{
+    border: 5px dashed #FF9FE5;
+    width: 450px;
 }
 
 #about-me-section{
@@ -96,10 +141,17 @@ body {
 .about-articles{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
     margin: 10px;
     background-color: #3423A6;
+    max-width: 450px;
+}
+
+#hold-about-content{
+    display: flex;
+    flex-direction: row;
 }
 
 #folio-holder{

@@ -20,7 +20,7 @@ body {
     margin: 0;
     /* background-color: #354F52; */
     /* background: linear-gradient(#84A98C, #354F52); */
-    background-color: #091540;
+    background-color: #040529;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -93,9 +93,26 @@ body {
     justify-content: center;
 }
 
-#portfolio-section{
+.about-articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #3423A6;
+}
+
+#folio-holder{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#portfolio-section{
     display: flex;
     flex-direction: row;
     align-items: center;

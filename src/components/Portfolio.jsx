@@ -3,8 +3,8 @@ import React from "react";
 const Portfolio = () => {
     return(
       <div id="folio-holder">
+        <h2>check out some of my work!</h2>
 <div id="portfolio-section">
-<h2>check out some of my work!</h2>
             <div className="folio-card">
             <h3>Clicker Game</h3>
           <a href='https://boisterous-travesseiro-636639.netlify.app' target='_blank'>Clicker Game</a>

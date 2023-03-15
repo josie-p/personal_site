@@ -12,7 +12,8 @@ const About = () => {
             <img src={josiePic} height="280" width="270" alt="josie"></img>
             <img src={recentFam} height="280" width="270" alt="josie's family in SF"></img>
         </div>
-            <h3>about me</h3>
+        <article className="about-articles">
+        <h3>about me</h3>
             <p>
             Hi! My name is Josie Parker and I&apos;m 19 years old. I live with
             my family - my parents, Ben and Christina, my brother, Cash, and our
@@ -32,6 +33,8 @@ const About = () => {
             decided on web design and development, found I was passionate about
             it, and never looked back.
             </p>
+        </article>
+        <article className="about-articles">
         <h3>what i love</h3>
         <p>
         I love, first and foremost, spending time with my family and my best
@@ -46,8 +49,7 @@ const About = () => {
             feeling of being satisfied with a project that works correctly and
             functions (mostly) as intended.
         </p>
-
-
+        </article>
         </div>
     )
 }

@@ -1,4 +1,7 @@
 import React from "react";
+import cookieClicker from "./images/cookie-clicker.png";
+import ticTacToe from "./images/tic-tac-toe.png";
+import puppyBowl from "./images/puppy-bowl.png";
 
 const Portfolio = () => {
     return(
@@ -7,7 +10,8 @@ const Portfolio = () => {
 <div id="portfolio-section">
             <div className="folio-card">
             <h3>Clicker Game</h3>
-          <a href='https://boisterous-travesseiro-636639.netlify.app' target='_blank'>Clicker Game</a>
+            <a href='https://boisterous-travesseiro-636639.netlify.app' target='_blank'><img className= "folio-pics" src={cookieClicker} alt="cookie clicker project"></img></a>
+          {/* <a href='https://boisterous-travesseiro-636639.netlify.app' target='_blank'>Clicker Game</a> */}
           <p>
             Pork belly beard irony stumptown. Raw denim dreamcatcher gatekeep,
             authentic chicharrones butcher fashion axe tacos lo-fi hell of
@@ -18,7 +22,8 @@ const Portfolio = () => {
             </div>
             <div className="folio-card">
             <h3>Tic-Tac-Toe</h3>
-          <a href='https://meek-beijinho-e76832.netlify.app' target='_blank'>Tic-Tac-Toe</a>
+            <a href='https://meek-beijinho-e76832.netlify.app' target='_blank'><img className= "folio-pics" src={ticTacToe} alt="tic-tac-toe project"></img></a>
+          {/* <a href='https://meek-beijinho-e76832.netlify.app' target='_blank'>Tic-Tac-Toe</a> */}
           <p>
             Pork belly beard irony stumptown. Raw denim dreamcatcher gatekeep,
             authentic chicharrones butcher fashion axe tacos lo-fi hell of
@@ -29,7 +34,9 @@ const Portfolio = () => {
             </div>
             <div className="folio-card">
             <h3>Puppy Bowl</h3>
-          <a href='https://elegant-kashata-207cc6.netlify.app' target='_blank'>Puppy Bowl</a>
+            <a href='https://elegant-kashata-207cc6.netlify.app' target='_blank'> <img className= "folio-pics" src={puppyBowl} alt="puppy bowl project"></img></a>
+            {/* <a href='https://elegant-kashata-207cc6.netlify.app' target='_blank'> <img className= "folio-pics" src={puppyBowl} alt="puppy bowl project"></img></a> */}
+          {/* <a href='https://elegant-kashata-207cc6.netlify.app' target='_blank'>Puppy Bowl</a> */}
           <p>
             Pork belly beard irony stumptown. Raw denim dreamcatcher gatekeep,
             authentic chicharrones butcher fashion axe tacos lo-fi hell of

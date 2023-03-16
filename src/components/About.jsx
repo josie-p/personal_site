@@ -39,7 +39,7 @@ const About = () => {
             </p>
         </article>
         <article className="about-articles">
-        <h3>what i love</h3>
+        <h3>what I love</h3>
         <p>
         I love, first and foremost, spending time with my family and my best
             friend. They're my favorite people in the world and never fail to

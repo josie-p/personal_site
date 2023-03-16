@@ -13,6 +13,9 @@ const Home = () =>{
             <div id="portfolio">
             <Portfolio/>
             </div>
+            <div id="bottom">
+                <p>made with &#128151; by josie</p>
+            </div>
         </div>
     )
 }

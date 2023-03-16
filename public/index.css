@@ -18,24 +18,19 @@ zaffre: #3423A6
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 body {
     margin: 0;
-    /* background-color: #354F52; */
-    /* background: linear-gradient(#84A98C, #354F52); */
-    background-color: #040529;
+    background-color: #02042c;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
 #navbar {
-    /* background-color: black; */
-    /* color: #3423A6; */
-    background-color: #040529;
+    background-color: #02042c;
     display: flex;
     align-items: center;
     flex-grow: 1;
     max-height: 10%;
     min-height: 40px;
     margin-left: 10px;
-    /* margin-top: 5px; */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -51,8 +46,6 @@ body {
     list-style-type: none;
     letter-spacing: 1px;
     color: #2B50AA;
-    /* font-family: 'Rubik Mono One', sans-serif; */
-    /* padding: 10px; */
 }
 
 #navbar ul a{
@@ -94,32 +87,34 @@ body {
     height: 100vh;
     width: 100vw;
     color: #7692FF;
+    background-color: #02042c;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
+    text-align: center;
+}
+
+#hero-content{
     animation: fadeInUp;
     animation-duration: 3s;
-    /* animation-delay: 1s; */
+    animation-delay: .01s;
 }
 
 #hero-home h1{
-    /*
-    like tilt warp, rubik mono one, righteous
-    */
     font-family: 'Rubik Mono One', sans-serif;
     letter-spacing: 2px;
     font-size: 50pt;
     color: #F6C0D0;
     text-shadow: 2px 2px 3px #FF9FE5;
-    border-bottom: dashed 5px #F79824;
+    border-bottom: dashed 5px #7692FF;
 }
 
 #hero-home p{
     font-family: 'Tilt Warp', sans-serif;
     color: #FDCA40;
-    text-shadow: 1px 1px 2px #33A1FD;
+    text-shadow: 1px 1px 1px #7692FF;
     font-size: 20pt;
 }
 
@@ -136,14 +131,15 @@ body {
     align-items: center;
     justify-content: center;
     color: #F6C0D0;
-    padding-top: 60px;
+    padding-top: 65px;
 }
 
 .about-intro h2{
     font-size: 25pt;
     width: max-content;
-    border-bottom: 4px solid #FF9FE5;
+    border-bottom: 4px solid #FDCA40;
     text-align: center;
+    text-shadow: 2px 2px 2px #2B50AA;
 }
 
 .pics{
@@ -162,8 +158,6 @@ body {
 }
 
 #about-me-section{
-    /* height: 100vh;*/
-    /* width: 100vw;  */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -183,6 +177,7 @@ body {
     border-radius: 35px;
     padding: 15px;
     font-weight: 600;
+    box-shadow: 4px 4px 4px #2B50AA;
 }
 
 .about-articles h3{
@@ -198,7 +193,6 @@ body {
 
 #folio-holder{
     height: 100vh;
-    /* width: 100vw; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -211,7 +205,8 @@ body {
     color: #F6C0D0;
     font-size: 25pt;
     width: max-content;
-    border-bottom: 4px solid #FF9FE5;
+    border-bottom: 4px solid #FDCA40;
+    text-shadow: 2px 2px 2px #2B50AA;
 }
 
 
@@ -234,37 +229,50 @@ body {
     color: #040529;
     font-weight: 600;
     margin: 5px;
+    border: 5px solid #7692FF;
+    box-shadow: 4px 4px 4px #2B50AA;
 }
 
 .folio-card h3{
     color: #2B50AA;
     font-weight: 600;
-    border: 4px solid #7692FF;
+    border-bottom: 4px dashed #7692FF;
+    letter-spacing: 2px;
     padding: 5px;
-    border-radius: 35px;
+}
+
+.folio-card a{
+    color: #2B50AA;
+    text-decoration: none;
+    border-bottom: 4px dashed #7692FF;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+.folio-card a:hover{
+    border-bottom: 4px solid #7692FF;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
 }
 
 .folio-pics{
     height: 200px;
     width: 270px;
+    object-fit: cover;
     border-radius: 35px;
     border: 4px solid #FF9FE5;
     padding: 5px;
-    transition: ease-in;
+    transition: ease-in-out;
     transition-duration: 0.3s;
 }
 
 .folio-pics:hover{
+    object-fit: fill;
     background-color: #FF9FE5;
     border: 4px dashed #7692FF;
-    transition: ease-in;
+    transition: ease-in-out;
     transition-duration: 0.3s;
 }
-
-/* .effect:hover{
-    background-color: rgb(255,159,229, 0.3);
-    background-color: rgb(58, 58, 58, 0.3);
-} */
 
 #bottom{
     text-align: center;

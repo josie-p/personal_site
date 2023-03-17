@@ -2,6 +2,7 @@ import React from "react";
 import { Hero, About, Portfolio } from "./"
 
 const Home = () =>{
+
     return(
         <div>
             <div id="home">

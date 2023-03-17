@@ -1,18 +1,23 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import vegas from "./images/vegas.jpeg";
 import josiePic from "./images/about-josie.jpeg";
 import recentFam from "./images/recent-fam.jpeg";
 
 const About = () => {
+
+    const { ref: myRef, inView: elemVisible } = useInView();
+    const { ref: bounce, inView: bounceVisible } = useInView();
+
     return(
         <div id="about-holder">
             <div id="about-me-section">
         <div className="about-intro">
-        <h2>about</h2>
-            <div id="about-photos">
-            <img className="pics one" src={vegas} height="280" width="270" alt="josie's family in vegas"></img>
-            <img className="pics two" src={josiePic} height="280" width="270" alt="josie"></img>
-            <img className="pics three" src={recentFam} height="280" width="270" alt="josie's family in SF"></img>
+        <h2 ref={bounce} className={bounceVisible ? "bounceIt" : null}>about</h2>
+            <div id="about-photos" ref={myRef} className={elemVisible ? "enterRight" : null}>
+            <img className="pics one" src={vegas} alt="josie's family in vegas"></img>
+            <img className="pics two" src={josiePic}  alt="josie"></img>
+            <img className="pics three" src={recentFam} alt="josie's family in SF"></img>
         </div>
         </div>
         <div id="hold-about-content">
@@ -55,7 +60,6 @@ const About = () => {
         </p>
         </article>
         </div>
-        
         </div>
         </div>
         

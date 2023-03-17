@@ -1,13 +1,18 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import cookieClicker from "./images/cookie-clicker.png";
 import ticTacToe from "./images/tic-tac-toe.png";
 import puppyBowl from "./images/puppy-bowl.png";
 
 const Portfolio = () => {
+
+  const { ref: slideIn, inView: slideVisible } = useInView();
+  const { ref: bounce, inView: bounceVisible } = useInView();
+
     return(
       <div id="folio-holder">
-        <h2>check out some of my work!</h2>
-<div id="portfolio-section">
+        <h2 ref={bounce} className={bounceVisible ? "bounceIt" : null}>check out some of my work!</h2>
+<div id="portfolio-section" ref={slideIn} className={slideVisible ? "enterLeft" : null}>
             <div className="folio-card">
             <h3>Clicker Game</h3>
             <img className= "folio-pics" src={cookieClicker} alt="cookie clicker project"></img>

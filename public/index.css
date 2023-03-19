@@ -336,6 +336,8 @@ body {
   transition-duration: 0.3s;
 }
 
+
+/* media queries!! */
 @media screen and (max-width: 450px){
   .seeAll{
     display: flex;
@@ -396,14 +398,28 @@ body {
 
 /* folio stuff is broken */
 
-/* #folio-holder{
-  margin: 100px;
+#about{
+margin-bottom: 700px;
 }
 
 #portfolio-section{
-  margin-top: 50px;
-  margin-bottom: 50px;
   flex-direction: column;
-} */
+}
 
+#bottom{
+  margin-top: 700px;
+}
+
+}
+
+@media screen and (max-width: 1413px){
+  .enterRight {
+    animation: none;
+    animation-duration: 4s;
+  }
+
+  .enterLeft {
+    animation: none;
+    animation-duration: 4s;
+  }
 }

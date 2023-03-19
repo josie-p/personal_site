@@ -1,4 +1,5 @@
 import React from "react";
+import github from "./images/github-mark-white.png";
 import { Hero, About, Portfolio } from "./"
 
 const Home = () =>{
@@ -15,6 +16,7 @@ const Home = () =>{
             <Portfolio/>
             </div>
             <div id="bottom">
+                <a href="https://github.com/josie-p" target="_blank"><img src={github} alt="github logo" height="50" width="50"></img></a>
                 <p>made with &#128151; by josie</p>
             </div>
         </div>

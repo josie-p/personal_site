@@ -14,14 +14,11 @@ const Portfolio = () => {
         <h2 ref={bounce} className={bounceVisible ? "bounceIt" : null}>check out some of my work!</h2>
 <div id="portfolio-section" ref={slideIn} className={slideVisible ? "enterLeft" : null}>
             <div className="folio-card">
-            <h3>Clicker Game</h3>
+            <h3>Reach for the Stars</h3>
             <img className= "folio-pics" src={cookieClicker} alt="cookie clicker project"></img>
           <p>
-            Pork belly beard irony stumptown. Raw denim dreamcatcher gatekeep,
-            authentic chicharrones butcher fashion axe tacos lo-fi hell of
-            taiyaki disrupt freegan tote bag. Mumblecore small batch literally
-            jean shorts ascot, disrupt knausgaard PBR&B selfies. Air plant deep
-            v subway tile taiyaki.
+            This is a clicker game!
+            It was a beginner project built using HTML, CSS, and JavaScript!
           </p>
           <a href="https://boisterous-travesseiro-636639.netlify.app" target='_blank'>view site</a>
             </div>
@@ -29,25 +26,17 @@ const Portfolio = () => {
             <h3>Tic-Tac-Toe</h3>
             <img className= "folio-pics" src={ticTacToe} alt="tic-tac-toe project"></img>
           <p>
-            Pork belly beard irony stumptown. Raw denim dreamcatcher gatekeep,
-            authentic chicharrones butcher fashion axe tacos lo-fi hell of
-            taiyaki disrupt freegan tote bag. Mumblecore small batch literally
-            jean shorts ascot, disrupt knausgaard PBR&B selfies. Air plant deep
-            v subway tile taiyaki.
+            This is a Tic-Tac-Toe Game!
+            I built this project using HTML, CSS, and JavaScript!
           </p>
           <a href="https://meek-beijinho-e76832.netlify.app" target='_blank'>view site</a>
             </div>
             <div className="folio-card">
             <h3>Puppy Bowl</h3>
             <img className= "folio-pics" src={puppyBowl} alt="puppy bowl project"></img>
-            {/* <a href='https://elegant-kashata-207cc6.netlify.app' target='_blank'> <img className= "folio-pics" src={puppyBowl} alt="puppy bowl project"></img></a> */}
-          {/* <a href='https://elegant-kashata-207cc6.netlify.app' target='_blank'>Puppy Bowl</a> */}
           <p>
-            Pork belly beard irony stumptown. Raw denim dreamcatcher gatekeep,
-            authentic chicharrones butcher fashion axe tacos lo-fi hell of
-            taiyaki disrupt freegan tote bag. Mumblecore small batch literally
-            jean shorts ascot, disrupt knausgaard PBR&B selfies. Air plant deep
-            v subway tile taiyaki.
+            This a site displaying the "opponents" in a fake puppy bowl!
+            I built this project using HTML, CSS, React, and JavaScript; I also fetched all data about the puppies from an API.
           </p>
           <a href="https://elegant-kashata-207cc6.netlify.app" target='_blank'>view site</a>
             </div>

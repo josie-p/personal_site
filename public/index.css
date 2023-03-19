@@ -262,7 +262,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 430px;
+  width: 300px;
+  height: 500px;
   padding: 10px;
   border-radius: 35px;
   background-color: #f6c0d0;
@@ -343,11 +344,6 @@ body {
     border: 5px dashed #ff9fe5;
     max-width: 250px;
   }
-
-  /* #hero-content{
-    width: 100%;
-  } */
-
   #hero-content h1, #hero-content p{
     width: fit-content;
   }

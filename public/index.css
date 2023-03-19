@@ -44,6 +44,10 @@ html {
     auto;
 }
 
+::selection{
+  background-color: rgb(253, 202, 64, 0.7);
+}
+
 body {
   margin: 0;
   background-color: #02042c;
@@ -286,7 +290,7 @@ body {
 }
 
 .folio-card a:hover {
-  border-bottom: 4px solid #7692ff;
+  border-bottom: 4px solid #ff9fe5;
   transition: ease-in-out;
   transition-duration: 0.4s;
   animation: pulse;
@@ -320,6 +324,16 @@ body {
   text-decoration: none;
   border-bottom: 3px dashed #7692ff;
   font-weight: 600;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
+
+#contact a:hover{
+  color: #fdca40;
+  text-decoration: none;
+  border-bottom: 3px dashed #ff9fe5;
+  transition: ease-in;
+  transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 450px){

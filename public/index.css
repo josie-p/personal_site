@@ -24,7 +24,7 @@ zaffre: #3423A6
 
 .bounceIt {
   animation: bounce;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-delay: 0.5s;
 }
 
@@ -66,15 +66,7 @@ body {
   right: 0;
   left: 0;
 }
-/* #navbar ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  letter-spacing: 1px;
-  color: #2b50aa;
-} */
+
 
 .nav-stuff{
   display: flex;
@@ -323,8 +315,11 @@ body {
   text-align: center;
 }
 
-.seeAll{
-  display: none;
+#contact a{
+  color: #f6c0d0;
+  text-decoration: none;
+  border-bottom: 3px dashed #7692ff;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 450px){
@@ -338,20 +333,12 @@ body {
 
   #nav-links{
     display: none;
-    background-color: #7692ff;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* width: 100vw; */
-    height: 20%;
-    /* overflow: hidden; */
-    position: relative;
   }
 
-  #nav-links li{
-border-bottom: 2px solid #ff9fe5;
-  }
 
   #navbar {
     background-color: #02042c;
@@ -360,9 +347,49 @@ border-bottom: 2px solid #ff9fe5;
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    overflow: hidden;
     position: relative;
-    max-height: 40%;
   }
+
+  #contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enterRight {
+    animation: none;
+    animation-duration: 4s;
+  }
+
+  .enterLeft {
+    animation: none;
+    animation-duration: 4s;
+  }
+
+  .pics.one,
+.pics.three {
+  display: none;
+}
+
+.pics.two {
+  border: 5px dashed #ff9fe5;
+  width: 350px;
+}
+
+#hold-about-content{
+  flex-direction: column;
+}
+
+/* folio stuff is broken */
+
+/* #folio-holder{
+  margin: 100px;
+}
+
+#portfolio-section{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-direction: column;
+} */
 
 }

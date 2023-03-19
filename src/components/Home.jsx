@@ -17,6 +17,7 @@ const Home = () =>{
             </div>
             <div id="bottom">
                 <a href="https://github.com/josie-p" target="_blank"><img src={github} alt="github logo" height="50" width="50"></img></a>
+                <p id="contact"><a href="mailto:parker.josie.eden@gmail.com" title="Contact Josie!">contact me</a></p>
                 <p>made with &#128151; by josie</p>
             </div>
         </div>

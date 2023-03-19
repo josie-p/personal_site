@@ -338,7 +338,24 @@ body {
 
 
 /* media queries!! */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 280px){
+  .pics.two {
+    border: 5px dashed #ff9fe5;
+    max-width: 250px;
+  }
+
+  /* #hero-content{
+    width: 100%;
+  } */
+
+  #hero-content h1, #hero-content p{
+    width: fit-content;
+  }
+
+
+}
+
+@media screen and (max-width: 540px){
   .seeAll{
     display: flex;
     align-items: center;
@@ -396,7 +413,14 @@ body {
   flex-direction: column;
 }
 
-/* folio stuff is broken */
+#about-holder{
+  align-items: center;
+  justify-content: center;
+}
+
+.about-articles{
+  max-width: 275px;
+}
 
 #about{
 margin-bottom: 700px;
@@ -404,6 +428,15 @@ margin-bottom: 700px;
 
 #portfolio-section{
   flex-direction: column;
+}
+
+.folio-card{
+  max-width: 275px;
+}
+
+#folio-holder h2{
+  width: fit-content;
+  text-align: center;
 }
 
 #bottom{
@@ -422,4 +455,37 @@ margin-bottom: 700px;
     animation: none;
     animation-duration: 4s;
   }
+}
+
+@media screen and (max-width: 1280px){
+  .pics.one,
+  .pics.three {
+    display: none;
+  }
+  
+  .pics.two {
+    border: 5px dashed #ff9fe5;
+    width: 400px;
+  }
+
+  .about-articles{
+    max-width: 380px;
+  }
+
+  #about{
+    margin-bottom: 700px;
+    }
+    
+    #portfolio-section{
+      flex-direction: column;
+    }
+    
+    .folio-card{
+      max-width: 280px;
+    }
+    
+    #bottom{
+      margin-top: 700px;
+    }
+
 }

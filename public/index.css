@@ -240,10 +240,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
 }
 
 #folio-holder h2 {
   font-family: "Tilt Warp", sans-serif;
+  width: 60vw;
   color: #f6c0d0;
   font-size: 25pt;
   width: max-content;
@@ -253,9 +256,11 @@ body {
 
 #portfolio-section {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 70vw;
 }
 
 #portfolio-section .folio-card {
@@ -289,6 +294,7 @@ body {
   border-bottom: 4px dashed #7692ff;
   transition: ease-in-out;
   transition-duration: 0.4s;
+  padding: 10px;
 }
 
 .folio-card a:hover {
@@ -425,6 +431,9 @@ margin-bottom: 700px;
 
 #portfolio-section{
   flex-direction: column;
+  flex-wrap: wrap;
+  /* margin-top: 40rem;
+  margin-bottom: 40rem; */
 }
 
 .folio-card{
@@ -433,7 +442,12 @@ margin-bottom: 700px;
 
 #folio-holder h2{
   width: fit-content;
+  /* width: 75vw; */
   text-align: center;
+  /* margin-top: 30rem;
+  margin-bottom: 30rem; */
+  margin-top: 40rem;
+  margin-bottom: 40rem;
 }
 
 #bottom{
